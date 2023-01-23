@@ -1,9 +1,3 @@
 <template>
-<div>helloworld2</div>
+      <NuxtLink to="/shop">shopingpage</NuxtLink>
 </template>
-
-<script>
-export default {
-  name: 'IndexPage'
-}
-</script>
