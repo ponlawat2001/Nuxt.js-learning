@@ -1,9 +1,15 @@
 <template>
-  <Tutorial/>
+  <div>
+    helloworld
+  </div>
 </template>
 
+
 <script>
+import NuxtLogo from '../components/NuxtLogo.vue';
+
 export default {
-  name: 'IndexPage'
+    name: "IndexPage",
+    components: { NuxtLogo }
 }
 </script>
