@@ -1,3 +1,3 @@
 <template>
-      <NuxtLink to="/shop">shopingpage</NuxtLink>
+      <NuxtLink to="/home">home</NuxtLink>
 </template>
