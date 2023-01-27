@@ -2,7 +2,7 @@ export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
 
   head: {
-    title: 'home',
+    title: 'Shop Sibhai Official',
     htmlAttrs: {
       lang: 'en'
     },
@@ -17,10 +17,9 @@ export default {
     ]
   },
 
-
-
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
+    '@assets/styles/theme.css'
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
@@ -32,6 +31,7 @@ export default {
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
+    '@nuxtjs/svg',
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
