@@ -3,7 +3,14 @@
         <img src="~/assets/images/logo/logo.png" width="100px" />
         <div class="mainmenu">
             <label class="title">
-                <slot></slot>
+                <li><nuxt-link to="/">หน้าหลัก</nuxt-link></li>
+                <li><nuxt-link to="/">เกี่ยวกับเรา</nuxt-link></li>
+                <li><nuxt-link to="/">บัตรเติมเงิน</nuxt-link></li>
+                <li><nuxt-link to="/">เติมเกมออนไลน์</nuxt-link></li>
+                <li><nuxt-link to="/">เติมเงินมือถือ</nuxt-link></li>
+                <li><nuxt-link to="/">สุ่มของรางวัล</nuxt-link></li>
+                <li><nuxt-link to="/">เติมบัตรเครดิต</nuxt-link></li>
+                <li><nuxt-link to="/">คำถามที่พบบ่อย</nuxt-link></li>
             </label>
             <div class="navigator">
             </div>
@@ -23,7 +30,7 @@
     height: 100px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     padding: 0 20px;
     box-sizing: border-box;
 }
