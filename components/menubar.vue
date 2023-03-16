@@ -21,7 +21,7 @@
 <style>
 .menubar {
     background-color: white;
-    position: fixed;
+    /* position: fixed; */
     font-size: 14px;
     font-family: sans-serif;
     top: 0;
@@ -33,6 +33,7 @@
     justify-content: center;
     padding: 0 20px;
     box-sizing: border-box;
+
 }
 
 .logo {
@@ -73,6 +74,7 @@
 
 a.nuxt-link-exact-active {
     color: #929292;
+    text-decoration: none;
 }
 
 a:hover {

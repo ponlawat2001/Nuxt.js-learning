@@ -12,13 +12,30 @@ export default {
       { name: 'format-detection', content: 'telephone=no' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      {
+        rel: 'icon',
+        type: 'image/x-icon',
+        href: '/favicon.ico'
+      },
+      {
+        rel: 'stylesheet',
+        href: '/bootstarp/css/bootstarp.min.css'
+      },
+      {
+        rel: 'stylesheet',
+        href: '/theme.css'
+      }
+    ],
+    script: [
+      {
+        src: '/bootstarp/js/bootstarp.bundle.min.js',
+        type: 'text/javascript'
+      }
     ]
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
-    '~/assets/theme.css'
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
