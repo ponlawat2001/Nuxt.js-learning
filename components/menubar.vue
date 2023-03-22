@@ -1,6 +1,6 @@
 <template>
     <div class="menubar">
-        <img src="~/assets/images/logo/logo.png" width="100px" />
+        <img src="https://www.termtang.com/assets/images/logo.png?v=4" width="150" />
         <div class="mainmenu">
             <label class="title">
                 <li v-for="(item, index) in items" :key="index">
@@ -60,6 +60,7 @@ export default {
 
 .mainmenu {
     display: flex;
+    margin-left: 150px;
 }
 
 .navigator {

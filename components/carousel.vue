@@ -1,5 +1,5 @@
 <template>
-    <vueper-slides :dragging-distance="100" :autoplay="true" :arrows="false">
+    <vueper-slides :dragging-distance="100" :autoplay="true" :fixed-height="true" :arrows="false">
         <vueper-slide v-for="(slide, i) in slides" :key="i" :image="slide.image" :title="slide.title"
             :content="slide.content" />
     </vueper-slides>
@@ -15,21 +15,21 @@ export default {
     data: () => ({
         slides: [
             {
-                title: 'Slide #1',
-                content: 'Slide 1 content.',
-                image: 'https://www.termtang.com/assets/images/promotion/1.jpg'
+                title: 'บัตรเติมเกมออนไลน์',
+                content: 'ด้วยระบบอัตโนมัติตลอด 24 ชม. ถูกกว่าเติมเอง 100%',
+                image: 'https://www.termtang.com/assets/images/slide/1.jpg'
 
             },
             {
-                title: 'Slide #2',
-                content: 'Slide 2 content.',
-                image: 'https://www.termtang.com/assets/images/promotion/2.jpg'
+                title: 'เติมเงินรวดเร็วทันใจ',
+                content: 'ด้วยระบบอัตโนมัติ 5 ช่องทาง สะดวก รวดเร็ว ปลอดภัย',
+                image: 'https://www.termtang.com/assets/images/slide/2.jpg'
 
             },
             {
-                title: 'Slide #3',
-                content: '<h1>Slide 3 content.</h1>',
-                image: 'https://www.termtang.com/assets/images/promotion/3.jpg'
+                title: 'ระบบสุ่มรางวัลใหม่',
+                content: 'สุ่มรางวัลเริ่มต้นเพียง 10 เครดิตเท่่านั้น',
+                image: 'https://www.termtang.com/assets/images/slide/3.jpg'
 
             }
         ]
@@ -38,6 +38,15 @@ export default {
 </script>
 
 <style>
+.vueperslide__title {
+    font-size: 7em;
+    opacity: 0.7;
+}
+
+.vueperslides--fixed-height {
+    height: 500px;
+}
+
 .slidetext {
     text-align: center;
     color: black;
@@ -48,15 +57,17 @@ export default {
     border: none;
     box-shadow: none;
     transition: 0.3s;
-    width: 16px;
-    height: 16px;
+    width: 10px;
+    height: 10px;
 }
 
 .vueperslides__bullet--active .default {
     background-color: orange;
+
 }
 
 .vueperslides__bullet span {
+
     display: block;
     color: #fff;
     font-size: 10px;

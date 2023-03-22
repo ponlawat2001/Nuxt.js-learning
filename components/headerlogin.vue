@@ -1,20 +1,51 @@
 <template>
     <div class="login">
+        <img class="icon" width="16" height="16" src="~/assets/images/icon/Icon_facebook.png" />
+        <NuxtLink class="logintext-left" to="/">เวลาทำการ 10:00-22:00</NuxtLink>
+
+        <img class="icon" width="16" height="16" src="~/assets/images/icon/Icon_lock.png" />
         <NuxtLink class="logintext" to="/">เข้าสู่ระบบ</NuxtLink>
+        <label class="loginslash">|</label>
+        <img class="icon" width="16" height="16" src="~/assets/images/icon/Icon_add-user.png" />
+        <NuxtLink class="logintext" to="/">สมัครสมาชิก</NuxtLink>
+
     </div>
 </template>
 
 <style>
+.icon {
+    filter: invert(100%);
+    margin-right: 8px;
+    justify-self: end;
+    align-self: center;
+}
+
+.loginslash {
+    color: white;
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
 .login {
-    background-color: #343a40;
-    text-align: right;
-    height: 50px;
+    background-color: #636363;
+    text-align: center;
+    font-size: 14px;
+    padding-top: 15px;
+    padding-bottom: 15px;
     width: 100%;
 }
+
+.router-link-exact-active.logintext-left {
+    color: white;
+    text-decoration: none;
+    margin-right: 800px;
+}
+
 
 .router-link-exact-active.logintext {
     color: white;
     text-decoration: none;
+
 }
 
 .logintext:hover {
