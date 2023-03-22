@@ -1,7 +1,8 @@
 <template>
     <vueper-slides :dragging-distance="100" :autoplay="true" :fixed-height="true" :arrows="false">
         <vueper-slide v-for="(slide, i) in slides" :key="i" :image="slide.image" :title="slide.title"
-            :content="slide.content" />
+            :content="slide.content">
+        </vueper-slide>
     </vueper-slides>
 </template>
 
@@ -28,7 +29,7 @@ export default {
             },
             {
                 title: 'ระบบสุ่มรางวัลใหม่',
-                content: 'สุ่มรางวัลเริ่มต้นเพียง 10 เครดิตเท่่านั้น',
+                content: 'สุ่มรางวัลเริ่มต้นเพียง 10 เครดิตเท่านั้น',
                 image: 'https://www.termtang.com/assets/images/slide/3.jpg'
 
             }
@@ -39,8 +40,22 @@ export default {
 
 <style>
 .vueperslide__title {
-    font-size: 7em;
-    opacity: 0.7;
+    font-size: 36px;
+    font-weight: 600;
+    color: white;
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    z-index: 10;
+}
+
+.vueperslide__content {
+    font-size: 16px;
+    color: white;
+    position: absolute;
+    top: 47%;
+    left: 10%;
+    z-index: 10;
 }
 
 .vueperslides--fixed-height {

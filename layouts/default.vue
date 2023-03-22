@@ -26,5 +26,10 @@ export default {
 body {
     margin: 0%;
     background-color: #f8f9fa;
+    line-height: 23px;
+    font-style: normal;
+    font-family: TrueMedium, sans-serif;
+    color: #929292;
+    font-weight: 400;
 }
 </style>

@@ -1,19 +1,19 @@
 <template>
     <div class="login">
-        <img class="icon" width="16" height="16" src="~/assets/images/icon/Icon_facebook.png" />
+        <img class="icon-login" width="16" height="16" src="~/assets/images/icon/Icon_facebook.png" />
         <NuxtLink class="logintext-left" to="/">เวลาทำการ 10:00-22:00</NuxtLink>
 
-        <img class="icon" width="16" height="16" src="~/assets/images/icon/Icon_lock.png" />
+        <img class="icon-login" width="16" height="16" src="~/assets/images/icon/Icon_lock.png" />
         <NuxtLink class="logintext" to="/">เข้าสู่ระบบ</NuxtLink>
         <label class="loginslash">|</label>
-        <img class="icon" width="16" height="16" src="~/assets/images/icon/Icon_add-user.png" />
+        <img class="icon-login" width="16" height="16" src="~/assets/images/icon/Icon_add-user.png" />
         <NuxtLink class="logintext" to="/">สมัครสมาชิก</NuxtLink>
 
     </div>
 </template>
 
 <style>
-.icon {
+.icon-login {
     filter: invert(100%);
     margin-right: 8px;
     justify-self: end;
