@@ -1,6 +1,5 @@
 <template>
     <div class="messagebar">
-
         <div class="messagebox">
             <img class="icon-message" width="12" height="12" src="~/assets/images/icon/Icon_bell.png">
             Messages
@@ -8,7 +7,7 @@
         <div class="arrow"></div>
         <Vue3Marquee class="marquee" :gradient="true" :gradientColor="[103, 103, 103]" :gradientWidth="`10%`">
             ระบบเติมเงินเกมส์ออนไลน์สามารถใช้งานได้ปกติแล้วนะคะ
-            ลูกค้าสามารถทำการสั่งซื้อได้ด้วยตนเองผ่านระบบอัตโนมัติได้ตลอด 24 ช.ม ขอบคุณที่ใช้บริการค่ะ.
+            ลูกค้าสามารถทำการสั่งซื้อได้ด้วยตนเองผ่านระบบอัตโนมัติได้ตลอด 24 ช.ม ขอบคุณที่ใช้บริการค่ะ. &
         </Vue3Marquee>
     </div>
 </template>
@@ -27,6 +26,8 @@ export default {
 <style>
 .marquee {
     color: white;
+    width: 1050px;
+    height: 24px;
 }
 
 .icon-message {
@@ -42,16 +43,15 @@ export default {
     justify-content: center;
     align-items: center;
     display: flex;
-
-
 }
 
 .messagebox {
+    font-weight: 700;
     background-color: #8766c4;
     color: white;
     text-align: center;
     border-radius: 4px;
-    width: 220px;
+    width: 200px;
     height: 24px;
     margin-left: 24px;
 

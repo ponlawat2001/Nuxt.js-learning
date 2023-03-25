@@ -40,7 +40,7 @@
 .router-link-exact-active.logintext-left {
     color: white;
     text-decoration: none;
-    margin-right: 800px;
+    margin-right: 840px;
 }
 
 
