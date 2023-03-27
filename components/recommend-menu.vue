@@ -1,26 +1,26 @@
 <template>
     <div class="recommend-box">
         <a href="/" class="recommend-card" v-for="item in items">
-            <img src="~/assets/images/icon/Icon_creditcard.png" width="70" height="70">
+            <img :src="`~/assets/images/icon/${item.icon}`" width="70" height="70">
             {{ item.title }}
         </a>
 
     </div>
     <div class="recommend-box">
-        <a href="/" class="recommend-card" v-for="item2 in items2">
-            {{ item2 }}
-        </a>
+        <img src="https://www.termtang.com/assets/images/507044632017_s13881.png?v=2">
+        <img src="https://www.termtang.com/assets/images/1385772071434_s12100.png?v=1">
+
     </div>
 </template>
 
 <script>
 export default {
-
+    name: 'recommendmenu',
     data: () => ({
         items: [
             {
                 title: 'บัตรเติมเงิน',
-                icon: '~/assets/images/icon/Icon_creditcard.png',
+                icon: 'Icon_card.png',
             },
             {
                 title: 'เติมเกมออนไลน์',
