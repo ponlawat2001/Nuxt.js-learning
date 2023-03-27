@@ -1,14 +1,22 @@
 <template>
     <div class="topup-box">
-        <vueper-slides class="topup-card" :dragging-distance="100" :autoplay="true" :fixed-height="true" :arrows="false">
-            <vueper-slide v-for="item in items" :key="i" :image="item.image" :title="item.title" :content="item.content">
+        <vueper-slides class="no-shadow" :slide-ratio="1 / 4" :visible-slides="6" slide-multiple :gap="5"
+            :dragging-distance="100" :autoplay="true" :fixed-height="true" :arrows="false"
+            :breakpoints="{ 800: { visibleSlides: 2, slideMultiple: 2 } }">
+            <vueper-slide class="topup-card" v-for="item in items" :key="i" :image="item.image" :title="item.title"
+                :content="item.content">
             </vueper-slide>
         </vueper-slides>
     </div>
 </template>
 
 <script>
+import { VueperSlides, VueperSlide } from 'vueperslides'
+import 'vueperslides/dist/vueperslides.css'
 export default {
+
+    components: { VueperSlides, VueperSlide },
+
     data: () => ({
         items: [
             {
@@ -43,27 +51,30 @@ export default {
 
 <style>
 div.topup-box {
-    overflow: auto;
+    margin: 8px 0 8px 0;
     width: 1200px;
-    white-space: nowrap;
-    margin: 8px 0 24px 0;
 }
 
-div.topup-box a {
-    display: inline-block;
-    color: #6c757d;
+div.topup-box .vueperslide__title {
+    font-size: 12px;
+    font-weight: 600;
+    color: gray;
+    position: absolute;
+    top: 0%;
+}
+
+div.topup-box .vueperslide__content {
+    font-size: 16px;
+    color: white;
+    position: absolute;
+}
+
+div.topup-box .vueperslides--fixed-height {
+    height: 190px;
+}
+
+div.topup-box .slidetext {
     text-align: center;
-    text-decoration: none;
-}
-
-div.topup-box a:hover {
-    color: #6f42c1;
-}
-
-.topup-card {
-    border: 1px #6c757d;
-    border-radius: 8px;
-    margin: 0 6px 0 6px;
-
+    color: black;
 }
 </style>
